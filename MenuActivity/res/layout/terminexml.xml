@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainscrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/terminemaillayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/terminemaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/BackimageImageview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:id="@+id/listtextmaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1.0"
+                android:background="@drawable/blackfade" >
+
+                <TextView
+                    android:id="@+id/terminetTtletextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="80px"
+                    android:textColor="@android:color/white"
+                    android:textSize="5sp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <TextView
+                    android:id="@+id/termineDatetimetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/terminetTtletextview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#d0d0d0"
+                    android:fontFamily="sans-serif-light" 
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/terminEextraextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/termineDatetimetextview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#d0d0d0"
+                    android:fontFamily="sans-serif-light" 
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/termineInformationextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/terminEextraextview"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-light" 
+                    android:textSize="15sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menubtnslayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20px" >
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/buttonborderxml" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonborderxml" >
+
+                        <Button
+                            android:id="@+id/informationbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Informationen"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/layout2"
+                        android:background="@drawable/buttonborderxml" >
+
+                        <Button
+                            android:id="@+id/speichernbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Speichern"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/layout3"
+                        android:background="@drawable/buttonborderxml"
+                         >
+
+                        <Button
+                            android:id="@+id/teilnehmenbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="Teilnehmen"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+              <RelativeLayout
+                    android:id="@+id/ParentLayout"
+                  android:layout_below="@+id/terminemaillayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     >
+            
+                
+                </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

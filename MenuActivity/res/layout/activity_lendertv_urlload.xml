@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/LENDERTVUPPERlayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/lightborder"
+        >
+        <TextView 
+            android:id="@+id/LENDERTVUPPERtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:hint="Loading..."
+            />
+        
+    </RelativeLayout>
+    
+    
+ <WebView  
+      android:id="@+id/LenderTvUrlwebview"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:layout_below="@+id/LENDERTVUPPERlayout"
+   android:layout_marginTop="15dp"
+/>
+ 
+ <RelativeLayout
+        android:id="@+id/fotobelowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lightborder"
+        
+        >
+       
+     <Button
+        android:id="@+id/backword"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/goback"
+        />
+    
+     <Button
+        android:id="@+id/forward"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/backword"
+         android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/goforw"
+        />
+     
+        <Button 
+            android:id="@+id/LenderTvSharebtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+             android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shareimageupdatedicon"
+            
+            />
+        
+    </RelativeLayout>
+
+ <ProgressBar
+     android:id="@+id/WebviewprogressBar"
+     style="?android:attr/progressBarStyleLarge"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true" 
+     />
+ 
+</RelativeLayout>

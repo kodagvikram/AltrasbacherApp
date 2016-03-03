@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:id="@+id/formularefrontimageview"
+        android:layout_width="216dp"
+        android:layout_height="162dp" 
+        android:src="@drawable/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/formularfronttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/formularefrontimageview"
+        android:layout_centerInParent="true"
+        android:padding="1dp"
+        android:text="Sample text"
+        android:textColor="#aba8a8"
+        android:textSize="16dp" />
+</RelativeLayout>
+    
+</RelativeLayout>

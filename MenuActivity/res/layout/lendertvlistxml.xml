@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="0dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop= "7dp"
+       
+        >
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/lightborder"
+            >
+        <ImageView
+            android:id="@+id/lendertvimageview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="false"
+            />
+        <TextView 
+            android:id="@+id/lendertvtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/lendertvimageview"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-light"
+            />
+        
+        <ImageView
+            android:id="@+id/lendergofor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lendertvimageview"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/goforw"
+            ></ImageView>
+
+        <ProgressBar
+            android:id="@+id/LendertvProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp" />
+        
+  </RelativeLayout>
+        </RelativeLayout>
+    
+
+</RelativeLayout>

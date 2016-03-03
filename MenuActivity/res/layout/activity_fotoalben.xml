@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FotoalbenActivity" >
+
+    <RelativeLayout
+        android:id="@+id/fotoalbenactivitylayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/lightborder"
+        >
+        
+        <TextView 
+            android:id="@+id/fotocoutnttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="Fotos"
+            />
+        
+    </RelativeLayout>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fotoalbenactivitylayout"
+        >
+         <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+    </RelativeLayout>
+        
+        
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/Photo_3_GridprogressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:visibility="gone"
+        
+        />
+
+</RelativeLayout>

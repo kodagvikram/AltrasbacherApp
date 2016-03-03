@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <TextView
+        android:id="@+id/emailtitletext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="E-Mail Verifizierung"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/emaildescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailtitletext"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Bitte geben Sie zur Verifizierung Ihre bei\n den Altsasbachern hinterlegte E-Mail\n Adresse ein"
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/emailrelativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emaildescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/customborder"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/emailedt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:hint="Ihre E-Mail Adresse"
+            android:imeOptions="actionDone" />
+
+        <Button
+            android:id="@+id/clearable_button_clear"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/close" />
+    </RelativeLayout>
+
+</RelativeLayout>

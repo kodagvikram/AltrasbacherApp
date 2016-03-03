@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mwc.myactivity.AppFirstPage" >
+
+    <TextView
+        android:id="@+id/titletxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Willkommen in der neuen\n   Altsasbacher App!"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/appimage"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/titletxt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/newlogobaner" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/appimage"
+        android:layout_marginTop="35dp"
+        android:background="#D3D3D3" />
+
+    <RelativeLayout
+        android:id="@+id/alreadyrelativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1" >
+
+        <Button
+            android:id="@+id/alreadymember"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="left|center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="Ich bin bereits Mitglied"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/alreadyimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/goforw" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/alreadyrelativelayout"
+        android:background="#D3D3D3" />
+
+    <RelativeLayout
+        android:id="@+id/wantrelativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2" >
+
+        <Button
+            android:id="@+id/wantmember"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="left|center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/wantimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/goforw" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/wantrelativelayout"
+        android:background="#D3D3D3" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/text"
+        android:textColor="#D3D3D3"
+        android:textSize="15dp" />
+
+</RelativeLayout>

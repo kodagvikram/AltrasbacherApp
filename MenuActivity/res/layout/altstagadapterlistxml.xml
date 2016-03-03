@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingTop="5dp"
+    android:paddingBottom="8dp"
+    >
+    
+<RelativeLayout
+    android:id="@+id/altstagEventsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingTop="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="1dp"
+    >    
+    
+    <TextView 
+        android:id="@+id/altstagEventTitletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jgst 1 und :studiskjgbsf sgjfgj "
+        android:paddingLeft="5dp"
+        android:fontFamily="sans-serif"  
+        android:textSize="13sp"
+        />
+    
+    <TextView 
+        android:id="@+id/altstagTimetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:45 12:13 - "
+        android:layout_below="@+id/altstagEventTitletextview"
+        android:fontFamily="sans-serif-light"  
+        android:paddingLeft="5dp"
+        android:textSize="12sp"
+        />
+    
+    <TextView 
+        android:id="@+id/altstagLocationtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Londandsfdhb- "
+        android:layout_below="@+id/altstagEventTitletextview"
+        android:layout_toRightOf="@+id/altstagTimetextview"
+        android:fontFamily="sans-serif-light"  
+        android:paddingLeft="1dp"
+        android:textSize="11sp"
+        />
+    
+</RelativeLayout>
+    
+</LinearLayout>

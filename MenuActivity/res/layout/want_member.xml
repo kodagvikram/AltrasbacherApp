@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+   >
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/mainrelativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/textrelativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp" >
+
+                <ImageView
+                    android:id="@+id/paperimage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:alpha="0.2"
+                    android:background="@drawable/beitrittserklarungimage" />
+
+                <TextView
+                    android:id="@+id/beitritext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/beitritdescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/beitritext"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Vielen Dank fur Ihr Interesse. Wie mochten\n Sie Ihre Beitrittserklarung einreichen?"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/textrelativelayout"
+                android:layout_marginTop="20dp"
+                android:background="#D3D3D3" />
+
+            <RelativeLayout
+                android:id="@+id/pdfeditorrelativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image1" >
+
+                <Button
+                    android:id="@+id/pdfeditor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/pdfeditorimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goforw" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/pdfeditorrelativelayout"
+                android:background="#D3D3D3" />
+
+            <RelativeLayout
+                android:id="@+id/pdfviaemailrelativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image2" >
+
+                <Button
+                    android:id="@+id/pdfviaemail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:text="An mein E-Mail Postfach senden"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/pdfviaemailimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goforw" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/pdfviaemailrelativelayout"
+                android:background="#D3D3D3" />
+
+            <RelativeLayout
+                android:id="@+id/printrelativelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image3" >
+
+                <Button
+                    android:id="@+id/print"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="left|center"
+                    android:paddingLeft="15dp"
+                    android:text="Ausdrucken"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/printimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goforw" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/printrelativelayout"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

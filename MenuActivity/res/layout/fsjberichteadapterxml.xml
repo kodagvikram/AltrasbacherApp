@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_marginTop="15dp"
+    >
+    
+    
+    <TextView 
+        android:id="@+id/fsjdatetextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="oct 21,2015"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+       android:paddingLeft="20dp"
+        android:background="#FFFFFF"
+        />
+    <RelativeLayout 
+        android:id="@+id/backlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borders"
+         android:layout_below="@+id/fsjdatetextview"
+        >
+
+    <RelativeLayout
+        android:id="@+id/fsjrelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+         >
+
+        <ImageView
+            android:id="@+id/RSSFEEDIMAGEVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/fsjtitletextview"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="17dp"
+            android:text="Sample text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/goforw" />
+
+        <ProgressBar
+            android:id="@+id/RSSFEEDPROGRESSBAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fsjtitletextview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp" 
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

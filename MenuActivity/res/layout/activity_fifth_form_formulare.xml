@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PDFActivity" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layoutscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+<RelativeLayout
+     android:id="@+id/nevigationLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:background="@drawable/lightborder" >
+                
+                 <Button
+                    android:id="@+id/EnptyPDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/EditedPDFbtn"
+                    android:layout_centerVertical="true"
+                    android:text="Leere PDF\n speichern"
+                    android:layout_marginRight="7dp"
+                    android:textColor="#FFFFFF"
+                     android:background="@drawable/rounded_button_xml"
+                    />
+                 <Button
+                    android:id="@+id/SavePDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EditedPDFbtn"
+                    android:layout_centerVertical="true"
+                    android:text="Ausgefüllte PDF\n speichern"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#FFFFFF"
+                     android:background="@drawable/rounded_button_xml"
+                    />
+
+                 <Button
+                     android:id="@+id/EditedPDFbtn"
+                     android:layout_width="2dp"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+                     android:background="@android:color/transparent"
+                     android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nevigationLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Alle wichtigen Infos zu COMMOVEAMUS"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="25dp"
+                    android:text="Was ist 
+                    
+                    COMMOVEAMUS? "
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/commoveamus" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_gravity="center"
+                    android:text="COMMOVEAMUS – was auf Lateinisch
+soviel bedeutet wie „Lasst uns etwas
+bewegen!“ - ist der Name für die neue Initiative des Altsasbachervereins für alle Schülerinnen und Schüler der Heimschule Lender und des Seminars St. Pirmin. COMMOVEAMUS lädt Euch ein, gemeinsam Euren Interessen nachzugehen, in Teamwork kreative Ideen zu spinnen, zu planen und durchzuführen, ja vielleicht sogar einen kleinen Traum zu verwirklichen. COMMOVEAMUS fordert Euch auf, zusammen mit Euren Freunden und Mitschülern Euren Lebensraum und den der Menschen um Euch, an der Schule, in Euren Gemeinden oder sonstwo, nach Euren Vorstellungen zu gestalten. Für die Umsetzung Eurer Ideen könnt Ihr bei COMMOVEAMUS finanzielle Unterstützung beantragen."
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="15dp"
+                    android:text="Was für Projekte werden gefördert?  "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_gravity="center"
+                    android:text="Wie der Untertitel „Von Wenigen für Viele“ schon verrät, kann Euch COMMOVEAMUS unterstützen, wenn Ihr Euch sozial oder für die Umwelt engagiert oder einen Beitrag zum interkulturellen Austausch leistet. Ihr könnt auch eine Förderung erhalten, wenn Ihr kreativ oder künstlerisch tätig seid oder Euer Projekt einen religiösen oder spirituellen Hintergrund hat. Ebenso gefördert werden können Projekte, mit denen Ihr ein spezielles Interesse von Euch, z.B. an Politik, Sport oder einer Wissenschaft, verfolgt.
+Konkret heißt das also: Ob Ihr ein Klettergerüst für ein Kinderheim bauen, Euch für eine bedrohte Tierart einsetzen, ein Theater- oder Musikstück einstudieren, interessante Persönlichkeiten zu einem Vortrag an die Schule einladen oder mit dem Fahrrad nach Taize pilgern wollt – Eurer Phantasie sind fast keine Grenzen gesetzt!"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_marginTop="15dp"
+                    android:text="Welche Bedingungen gibt es für die Förderung sonst noch?   "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView6"
+                    android:layout_gravity="center"
+                    android:text="In der Regel solltet Ihr Euch ein Projekt zu zweit oder in einer kleinen Gruppe vornehmen, weil Aktionen, die man gemeinsam anpackt, nicht nur mehr Spaß machen, sondern meistens auch besser gelingen, da jeder seine persönlichen Stärken beisteuern kann. Wenn Ihr aber eine besonders tolle Idee alleine verfolgen und umsetzen wollt, könnt Ihr Euch auch als Einzelperson bewerben.
+Bedingung ist außerdem, dass Ihr Euch von Anfang an überlegt, wie Ihr Euer Projekt (zum Beispiel nach der Durchführung) an der Schule präsentieren möchtet, um möglichst die ganze Schule an Euren Erlebnissen und Erfahrungen teilhaben zu lassen!
+Falls Ihr eine Idee zu einem Projekt habt, die in engem Zusammenhang mit dem Unterricht in einem bestimmten Fach steht, oder wenn das Projekt sogar im Unterricht durchgeführt werden soll, nehmt bitte vor der Bewerbung mit den entsprechenden Fachlehrern Kontakt auf! Auch bei allen anderen Projekten, die an
+der Schule stattfinden sollen, gilt, dass Ihr dafür verantwortlich seid, alle Leute an der darüber zu informieren, deren Arbeit von Eurer Aktion betroffen sein könnte (z.B. Schulleitung, Hausmeister, Lehrer, andere Schüler, etc.)."
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_marginTop="15dp"
+                    android:text="Wie kann ich mich bewerben?   "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_gravity="center"
+                    android:text="Mit Eurem COMMOVEAMUS-Projekt könnt Ihr Euch zweimal im Jahr bewerben: einmal bis wenige Wochen vor dem Altsasbachertag und dann nochmal bis kurz vor dem Tag der offenen Tür. Dies ist deshalb so geregelt, damit am Altsasbachertag bzw. dem Tag der offenen Tür selbst die Projekte, die gefördert werden, veröffentlicht werden können. Die genauen Termine findet Ihr immer im Internet unter www.heimschule-lender.de/commoveamus, könnt sie bei Frau Braun erfragen oder auf Anzeigen im Lenderspiegel achten.
+Antragsformulare gibt es im Internet oder bei Frau Braun im Schülersekretariat. Bei Frau Braun müsst Ihr die Anträge bis zu dem jeweiligen Zeitpunkt auch wieder abgeben."
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView9"
+                    android:layout_marginTop="15dp"
+                    android:text="Wer entscheidet über Eure Bewerbung?  "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_gravity="center"
+                    android:text="Eine Projektjury aus einem Mitglied des Altsasbachervereins, einem Mitglied aus Schulseelsorge bzw. Lehrerschaft und einem Vertreter des Elternbeirats enscheidet über eure Bewerbung. Die Jury teilt Euch in der Woche vor dem Altsasbachertag bzw. dem Tag der offenen Tür mit, wie sie über Euren Antrag entschieden hat. Am Altsasbachertag bzw. dem Tag der offenen Tür werden die geförderten Projekte dann, wie oben erwähnt, auch bekannt gegeben.
+Wenn es bei der ersten Bewerbungsrunde nicht geklappt hat, ist das kein Grund zur Traurigkeit, denn bei COMMOVEAMUS kann man sich immer wieder neu bewerben.
+Am besten nehmt Ihr Kontakt zu der Projektjury auf und fragt, was Ihr bei der nächsten Bewerbung besser machen könnt, damit Ihr beim nächsten Anlauf Erfolg habt."
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="15dp"
+                    android:text="Wo kann ich mich hinwenden, wenn ich noch Fragen habe??  "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView12"
+                    android:layout_gravity="center"
+                    android:text="Für Fragen rund um COMMOVEAMUS steht Euch Herr Gerd Sarcher jederzeit zur Verfügung. An der Schule könnt Ihr außerdem Jessica Betsch von der SMV ansprechen."
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView13"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/commoveamus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center" >
+              
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

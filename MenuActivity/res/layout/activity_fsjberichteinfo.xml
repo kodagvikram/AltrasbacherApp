@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fsjActivity" 
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+        <RelativeLayout 
+            android:id="@+id/fsjupperlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        >
+          <Button
+              android:id="@+id/fsjsettingbtn"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="15dp"
+              android:gravity="center_vertical"
+              android:background="@drawable/settingsimageicon"
+              ></Button>
+          <Button
+              android:id="@+id/fsjsharebtn"
+              android:layout_width="35dp"
+              android:layout_height="35dp"
+               android:layout_alignParentRight="true"
+              android:layout_marginRight="70dp"
+              android:gravity="center_vertical"
+              android:background="@drawable/shareimageupdatedicon"
+              ></Button>
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/RSSFEED_INFO_IMAGEVIEW"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@+id/fsjupperlayout"
+            />
+        
+         <WebView
+        android:id="@+id/RSSFEEDWEBVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RSSFEED_INFO_IMAGEVIEW"
+       />
+
+         <ProgressBar
+             android:id="@+id/RSSFEED_PROGRESS"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true" 
+             android:visibility="gone"
+             />
+         
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

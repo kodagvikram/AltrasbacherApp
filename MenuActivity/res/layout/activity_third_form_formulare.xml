@@ -1,0 +1,1137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PDFActivity" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layoutscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/nevigationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/lightborder" >
+
+
+                <Button
+                    android:id="@+id/EnptyPDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/rounded_button_xml"
+                    android:text="Leere PDF\n speichern"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/SavePDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/EnptyPDFbtn"
+                    android:background="@drawable/rounded_button_xml"
+                    android:text="Ausgefüllte PDF\n speichern"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nevigationLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/commoveamus" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginTop="0dp"
+                    android:text="Antragsformular COMMOVEAMUS\n
+Ein Initiativfonds des Altsasbachervereins "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="15dp"
+                    android:text="I. Antragsteller  "
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:text="1."
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Name:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextname"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewname"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewGeburtsdatum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextname"
+                    android:text="Geburtsdatum:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextGeburtsdatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewGeburtsdatum"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewAnschrift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum"
+                    android:layout_marginTop="15dp"
+                    android:text="Anschrift:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextAnschrift"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewAnschrift"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewKlasse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextAnschrift"
+                    android:text="Klasse:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextKlasse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewKlasse"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift"
+                    android:layout_marginTop="25dp"
+                    android:text="Email:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextEmail1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewEmail"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewTelefonnew1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/edittextEmail1"
+                    android:text="Telefon:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextTelefon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewTelefonnew1"
+                    android:background="#c9ecf8" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewheader2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="2."
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Name:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextname1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewname1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewGeburtsdatum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextname1"
+                    android:text="Geburtsdatum:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextGeburtsdatum1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewGeburtsdatum1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewAnschrift1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum1"
+                    android:layout_marginTop="15dp"
+                    android:text="Anschrift:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextAnschrift1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum1"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewAnschrift1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewKlasse1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextAnschrift1"
+                    android:text="Klasse:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextKlasse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum1"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewKlasse1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewEmail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift1"
+                    android:layout_marginTop="25dp"
+                    android:text="Email:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextEmail11"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift1"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewEmail1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewTelefon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/edittextEmail11"
+                    android:text="Telefon:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextTelefon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse1"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewTelefon1"
+                    android:background="#c9ecf8" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewheader3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="3."
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/textViewname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Name:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextname2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewname2"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewGeburtsdatum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextname2"
+                    android:text="Geburtsdatum:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextGeburtsdatum2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewGeburtsdatum2"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewAnschrift2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum2"
+                    android:layout_marginTop="15dp"
+                    android:text="Anschrift:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextAnschrift2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum2"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewAnschrift2"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewKlasse2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewGeburtsdatum2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/edittextAnschrift2"
+                    android:text="Klasse:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextKlasse2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextGeburtsdatum2"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewKlasse2"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewEmail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift2"
+                    android:layout_marginTop="25dp"
+                    android:text="Email:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextEmail2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift2"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewEmail2"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewTelefon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse2"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/edittextEmail2"
+                    android:text="Telefon:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextTelefon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewKlasse2"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewTelefon2"
+                    android:background="#c9ecf8" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewheader4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:text="(Bei weiteren Antragstellern entsprechende Daten bitte auf separatem Blatt beifügen!)"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textViewheader5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="II. Beschreibung des Projekts:"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textViewheader5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="III. Motivation für das Projekt"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textViewheader7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Was motiviert dich/euch persönlich, dieses Projekt durchzuführen? "
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textViewheader7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Welche Ziele soll das Projekt haben? Welche Wirkung willst du mit dem Projekt erzielen? "
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textViewheader8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Was erwartest du von dem Projekt für dich und andere? "
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader8"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textViewheader9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="IV. Durchführung (ungefährer zeitlicher Ablauf: Start, Abschluss, ...) "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader9"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textViewheader10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="V.  Wie möchtest du das Projekt (währe
+nd oder nach der Durchführung) an der 
+Heimschule Lender präsentieren?  "
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textViewheader11"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="VI. Finanzielle Planung"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout4"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewheader12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="02dp"
+                android:layout_marginTop="0dp" >
+
+                <TextView
+                    android:id="@+id/textViewAusgaben"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Ausgaben"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAusgaben"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Material:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewAusgaben"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="37dp"
+                    android:layout_toRightOf="@+id/textViewMaterial"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewFahrtkosten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewMaterial"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Fahrtkosten:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewFahrtkosten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewAusgaben"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewFahrtkosten"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewVerpflegung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewFahrtkosten"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Verpflegung:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewVerpflegung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewFahrtkosten"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewFahrtkosten"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewUnterkunft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewVerpflegung"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Unterkunft:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewUnterkunft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewVerpflegung"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewUnterkunft"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewSonstiges"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewUnterkunft"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Sonstiges :"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewSonstiges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewUnterkunft"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewSonstiges"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewSummeAusgaben"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSonstiges"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Summe Ausgaben:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewSummeAusgaben"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewSonstiges"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/textViewSummeAusgaben"
+                    android:background="#c9ecf8" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewheader12"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/mainlayout4" >
+
+                <TextView
+                    android:id="@+id/textViewAusgabennew1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="evtl.Einnahmen"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewZuschusse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAusgabennew1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Zuschüsse:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewZuschusse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="37dp"
+                    android:layout_toRightOf="@+id/textViewZuschusse"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewTeilnehmerbeitrage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewZuschusse"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Teilnehmerbeiträge:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewTeilnehmerbeitrage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewZuschusse"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewTeilnehmerbeitrage"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewSpenden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTeilnehmerbeitrage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Verpflegung:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewSpenden"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewTeilnehmerbeitrage"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewSpenden"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewSonstiges1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSpenden"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Unterkunft:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewSonstiges1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewSpenden"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textViewSonstiges1"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewSummeAusgaben1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewSonstiges1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="72dp"
+                    android:text="Summe Ausgaben:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextViewSummeAusgaben1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextViewSonstiges1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_toRightOf="@+id/textViewSummeAusgaben1"
+                    android:background="#c9ecf8" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewheader13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Höhe des beantragten Förderbetrages:"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textViewheader14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader13"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:text="(Ausgaben minus evtl. Einnahmen):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout5"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@+id/textViewheader14"
+                android:background="#c9ecf8" />
+
+            <TextView
+                android:id="@+id/textViewheader15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:text="VII. Sonstige benötigte Hilfen"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittextViewheader14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewheader15"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#c9ecf8" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout6"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edittextViewheader14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <EditText
+                    android:id="@+id/edittextort1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewort1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextort1"
+                    android:text="Ort, Datum:"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edittextort2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewort1"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewort2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextort2"
+                    android:text="Ort, Datum:"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edittextort3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewort2"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewort3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextort3"
+                    android:text="Ort, Datum:"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittextViewheader14"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/mainlayout6" >
+
+                <EditText
+                    android:id="@+id/edittextua1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewua1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextua1"
+                    android:text=" Unterschrift Antragsteller 1"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edittextua2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewua1"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewua2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextua2"
+                    android:text=" Unterschrift Antragsteller 2"
+                    android:textSize="14dp" />
+
+                <EditText
+                    android:id="@+id/edittextua3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewua2"
+                    android:layout_marginTop="10dp"
+                    android:background="#c9ecf8" />
+
+                <TextView
+                    android:id="@+id/textViewua3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextua3"
+                    android:text=" Unterschrift Antragsteller 3"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewheader16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Ansprechpartner für Fragen:"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textViewheader17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewheader16"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Gerd Sarcher\n
+Lehrer an der Heimschule Lender\n
+2. Vorstand der Vereinigung der Altsasbacher e.V."
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textViewheader17"
+                android:layout_marginRight="05dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/commoveamus" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center" >
+               
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

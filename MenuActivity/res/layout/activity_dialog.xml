@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+       >
+    
+     <Button
+         android:id="@+id/decreasebtn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="15dp"
+         android:background="@drawable/decreaseicon"
+         />
+    
+    <TextView
+        android:id="@+id/Uppertitletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:text=" Schriftgrobe" />
+
+     <Button
+         android:id="@+id/increasebtn"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="15dp"
+         android:background="@drawable/increaseicon"
+         />
+     </RelativeLayout>
+    
+      <RelativeLayout 
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+     
+          <Button
+         android:id="@+id/decreasebtn2"
+         android:layout_width="35dp"
+         android:layout_marginTop="15dp"
+         android:layout_height="35dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="15dp"
+         android:background="@drawable/brighnesssmallicon"
+         />
+    
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/decreasebtn2"
+        android:layout_toLeftOf="@+id/increasebtn2"
+        android:layout_marginTop="17dp" />
+
+     <Button
+         android:id="@+id/increasebtn2"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="15dp"
+         android:layout_marginRight="15dp"
+         android:background="@drawable/brightnesslargicon"
+         />
+          
+          </RelativeLayout>
+    <TextView
+        android:id="@+id/Lowertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textSize="25sp"
+        android:text=" Schlieben" />
+    
+    
+    <Button
+        android:id="@+id/CANCLEBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Lowertextview"
+        android:layout_marginTop="20dp"
+        android:text="CANCEL"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        />
+   
+</RelativeLayout>

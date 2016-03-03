@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/codetitletext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/codeedt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codetitletext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Code"
+        android:imeOptions="actionDone"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/codedescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeedt"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Wir haben einen vierstelligen Code an die\n angegebene E-Mail Adresse geschickt.\n Bitte geben Sie diesen ein."
+        android:textColor="#000000"
+        android:textSize="14dp" />
+
+</RelativeLayout>

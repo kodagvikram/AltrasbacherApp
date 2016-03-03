@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingRight="3dp"
+         android:paddingTop="11dp"
+        >
+        <TextView 
+            android:id="@+id/terminelisttitle" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:textSize="14sp"
+         android:fontFamily="sans-serif"
+            />
+         <TextView 
+            android:id="@+id/terminelistdatetime" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/terminelisttitle"
+           android:text="Sample tetile"
+          android:textSize="13sp"
+          android:textColor="#989898"
+          android:paddingBottom="9dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

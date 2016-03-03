@@ -1,0 +1,527 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PDFActivity" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/layoutscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+ <RelativeLayout
+     android:id="@+id/nevigationLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:background="@drawable/lightborder" >
+
+                
+                 <Button
+                    android:id="@+id/EnptyPDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Leere PDF\n speichern"
+                    android:layout_marginRight="7dp"
+                    android:textColor="#FFFFFF"
+                     android:background="@drawable/rounded_button_xml"
+                    />
+                 <Button
+                    android:id="@+id/SavePDFbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EnptyPDFbtn"
+                    android:layout_centerVertical="true"
+                    android:text="Ausgefüllte PDF\n speichern"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="#FFFFFF"
+                     android:background="@drawable/rounded_button_xml"
+                    />
+            </RelativeLayout>
+            
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/nevigationLayout"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/logobw" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Aufwandspauschale"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Gerne erstatten wir Ihnen für Ihren ehrenamtlichen Einsatz an der, Heimschule Lender eine Aufwandspauschale von 40 EUR.\n\nBitte helfen Sie uns bei einer unbürokratischen Abwicklichung und füllen das Antragsformular aus, indem Sie die gelb unterlegten Felder erfassen.\n\n Mailen oder faxen Sie das Formular an: \n\nWir werden Ihnen den Betrag auf Ihr angegebenes Konto überweisen.Bitte haben Sie dafür Verständnis, das Barauszahlungen nicht möglich sind.\n\nVielen Dank für Ihr Engagement an unserer Schule!\n\n\n\n "
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:text="Vereinigung der Altsasbacher und Förderverein"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logobw" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Ansprechpartner:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:text="Gerd Sarcher"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Email:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:text="gsarcher@t-online.de"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Antrag auf Fahrtkostenerstattung / Zuschuß"
+                android:textSize="17dp" />
+
+            <RelativeLayout
+                android:id="@+id/mainlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="05dp"
+                android:background="#b2f0f1" >
+
+                <TextView
+                    android:id="@+id/textVieAntragsteller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Antragsteller"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textVieAntragsteller"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Name:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewAnschrift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewname"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Anschrift:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewBankverbindung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewAnschrift"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Bankverbindung:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewBankverbindung"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Bank/IBAN/BIC:"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/mainlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@+id/textViewname"
+                    android:background="#ffe4b2" >
+
+                    <EditText
+                        android:id="@+id/edittextname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/edittextans"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edittextname"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/edittextbank"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edittextans"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/edittextiban"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edittextbank"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textVieAnla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlayout3"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Anlaß"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewZweck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlayout3"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Zweck der Reise:"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/textViewProjekt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewZweck"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Projekt/Veranst\naltung:"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/mainlayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlayout3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_toRightOf="@+id/textViewProjekt"
+                    android:background="#ffe4b2" >
+
+                    <EditText
+                        android:id="@+id/edittextZweck"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/edittextProjekt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edittextZweck"
+                        android:background="#ffe4b2"
+                        android:inputType="text" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textViewheder5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainlayout4"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Auslagenpauschale /\n Fahrtkostenzuschuß"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewheder6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewheder5"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Für das Projekt / für die Teilnahme\n an der Veranstaltung\n beantrage
+ich eine \nAuslagenpauschale in Höhe von"
+                    android:textSize="11dp" />
+
+                <RelativeLayout
+                    android:id="@+id/mainlayoutcolumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mainlayout4"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_toRightOf="@+id/textViewheder5"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:id="@+id/textViewheder7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center"
+                        android:text="Antrag"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mainlayoutcolumn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/mainlayoutcolumn"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toRightOf="@+id/textViewheder5"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:id="@+id/textViewheder8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:text="50,00 €"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mainlayoutcolumn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mainlayoutcolumn2"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="05dp"
+                    android:layout_marginTop="-2dp"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:id="@+id/textViewheder9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Gesamtbetrag:"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewheder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginTop="0dp"
+                        android:text="50,00€"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="-1dp" >
+
+                <TextView
+                    android:id="@+id/textViewheder16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Was Sie uns noch mitteilen wollen:"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout8"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/mainlayout7"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#bce8de" >
+
+                <TextView
+                    android:id="@+id/textViewheder11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Entscheid"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewheder12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewheder11"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="11dp"
+                    android:text="Der Antrag wird genehmigt / nicht genehmigt.\nDie Kosten in Höhe von 50,-- 
+€
+ werden übernommen."
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/textViewheder13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewheder12"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Sasbach, den"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/textViewVorstand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewheder12"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@+id/textViewheder13"
+                    android:text="Vorstand:"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/edittextVorstand"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_toRightOf="@+id/textViewVorstand"
+                    android:background="#bce8de"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/textViewBuchhaltungsvermerk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edittextVorstand"
+                    android:layout_marginLeft="05dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Buchhaltungsvermerk"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainlayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainlayout8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center" >
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relblue"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="#6699FF"
+        ></RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/mainrelativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/relblue"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageview"
+            android:gravity="center"
+            android:text="Login"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/usertxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview"
+            android:layout_marginTop="30dp"
+            android:text="User*:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/useredt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usertxt"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/passwordtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/useredt"
+            android:layout_marginTop="10dp"
+            android:text="Password*:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/passwordedt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordtxt"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordedt"
+            android:layout_marginTop="10dp"
+            android:text="(*)Fields marked with an asterisk are required."
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/discription"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mybutton"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            
+            android:text="Login"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
