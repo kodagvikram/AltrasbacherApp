@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+            android:id="@+id/iv_background"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <ImageView
+            android:id="@+id/iv_shadow"
+            android:background="@drawable/shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"/>
+
+    
+    <ScrollView
+            android:id="@+id/sv_left_menu"
+            android:scrollbars="none"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical">
+        <LinearLayout
+                android:id="@+id/layout_left_menu"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+            android:layout_width="260dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logobaner"
+            />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+            android:id="@+id/sv_right_menu"
+            android:scrollbars="none"
+            android:paddingRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical">
+        <LinearLayout
+                android:id="@+id/layout_right_menu"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                 <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beiträge"
+             android:layout_marginLeft="15dp"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            />
+
+                 <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="durchstöbern"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+</merge>
